@@ -32,4 +32,4 @@ This react app provides an example of how to setup testing and use basset.
 
 8) Repeat step 5 (assuming `npm start` is still running). You should see the same output.
 
-9) Check the new build within Basset. There should now be 8 modified snapshots.
+9) Check the new build within Basset. There should now be 7 modified snapshots and 1 unmodified (the link text snapshot)
