@@ -1,0 +1,13 @@
+diff --git a/src/App.css b/src/App.css
+index f256a84..ce846d3 100644
+--- a/src/App.css
++++ b/src/App.css
+@@ -2,7 +2,7 @@
+   text-align: center;
+   display: flex;
+   background-color: #F8F8F8;
+-  justify-content: flex-start;
++  justify-content: flex-end;
+   padding: 24px;
+ }
+ 

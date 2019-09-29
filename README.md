@@ -14,7 +14,7 @@ This react app provides an example of how to setup testing and use basset.
 
 2) Install the packages: `npm install`
 
-3) Checkout the original tag: `git checkout tags/build-1`
+3) Make sure you are on the master branch: `git checkout master`
 
 4) In the project directory run: `npm start`
 
@@ -28,7 +28,7 @@ This react app provides an example of how to setup testing and use basset.
 
 6) Assuming your tests pass - check the build within Basset. There should be 8 snapshots.
 
-7) Check out the modified tag: `git checkout tags/build-2`
+7) Apply the patch `git apply ./modify-justify-content.patch`
 
 8) Repeat step 5 (assuming `npm start` is still running). You should see the same output.
 
