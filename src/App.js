@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './basset.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="assets/basset-150x150.png" className="App-logo" alt="logo" />
         <p>
           Basset example
         </p>
@@ -18,6 +17,7 @@ function App() {
         >
           Learn more about basset
         </a>
+        <p className="hideme">This may be hidden</p>
       </header>
     </div>
   );

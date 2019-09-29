@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "BASSET_ASSETS=public BASSET_TOKEN=8d865fa50f2a67ec60cc2007f4468bc8 jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -26,6 +26,26 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@getbasset/node-client": "^1.0.0-beta.1",
+    "chromedriver": "^77.0.0",
+    "geckodriver": "^1.18.0",
+    "jest-environment-selenium": "^2.1.2",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "jest": {
+    "testEnvironment": "./jest/environment.js",
+    "testEnvironmentOptions": {
+      "capabilities": {
+        "browserName": "firefox"
+      }
+    },
+    "globalSetup": "./jest/setup.js",
+    "globalTeardown": "./jest/teardown.js",
+    "setupFilesAfterEnv": [
+      "jest-environment-selenium/dist/setup.js"
     ]
   }
 }

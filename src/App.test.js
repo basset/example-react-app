@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+test('App home page loads', async () => {
+  // any tests here
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  await driver.get('http://localhost:3001');
+  await snapshot('Basset example page', { widths: '1280,780,360', browsers: 'firefox,chrome'});
+  await snapshot('Basset example page - hidden', { hideSelectors: '.hideme'});
+  await snapshot('Basset example page - link', { selectors: '.App-link'});
 });
