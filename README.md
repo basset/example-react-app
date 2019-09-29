@@ -1,18 +1,35 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Basset example app
 
-In the project directory, you can run:
+This react app provides an example of how to setup testing and use basset.
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Server running [basset](https://basset.io/docs/getting-started). Record the URL of the application.
+- A project created in basset. Record the API Token.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Steps
+1) Fetch the tags: `git fetch --tags`
 
-### `npm test`
+2) Install the packages: `npm install`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3) Checkout the original tag: `git checkout tags/build-1`
+
+4) In the project directory run: `npm start`
+
+5) In another terminal run: `BASSET_URL=http://localhost:3000 BASSET_TOKEN=1234eaf npm test`
+
+    > BASSET_URL is the url for the basset server. BASSET_TOKEN is the API Token from your project in basset
+
+    You should see an input like this:
+
+    ![alt text](images/tests-passed.png)
+
+6) Assuming your tests pass - check the build within Basset. There should be 8 snapshots.
+
+7) Check out the modified tag: `git checkout tags/build-2`
+
+8) Repeat step 5 (assuming `npm start` is still running). You should see the same output.
+
+9) Check the new build within Basset. There should now be 8 modified snapshots.

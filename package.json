@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "BASSET_ASSETS=public BASSET_TOKEN=8d865fa50f2a67ec60cc2007f4468bc8 jest",
+    "test": "BASSET_ASSETS=public jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
