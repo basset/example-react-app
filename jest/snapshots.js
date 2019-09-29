@@ -8,7 +8,7 @@ const rimraf = util.promisify(require('rimraf'));
 
 const Basset = require('@getbasset/node-client');
 
-const BASSET_URL = process.env.BASSET_URL || 'http://localhost:3000';
+const BASSET_URL = process.env.BASSET_URL;
 const BASSET_TOKEN = process.env.BASSET_TOKEN;
 const BASSET_ASSETS = process.env.BASSET_ASSETS;
 

@@ -18,7 +18,7 @@ This react app provides an example of how to setup testing and use basset.
 
 4) In the project directory run: `npm start`
 
-5) In another terminal run: `BASSET_URL=http://localhost:3000 BASSET_TOKEN=1234eaf npm test`
+5) In another terminal run: `BASSET_URL=http://localhost BASSET_TOKEN=1234eaf npm test`
 
     > BASSET_URL is the url for the basset server. BASSET_TOKEN is the API Token from your project in basset
 
