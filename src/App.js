@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './basset.svg';
 import './App.css';
 
 function App() {
@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Basset example
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://basset.io"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn more about basset
         </a>
       </header>
     </div>
