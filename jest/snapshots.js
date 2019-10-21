@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
 const util = require('util');
 const mkdirp = require('mkdirp');
 const readline = require('readline');
@@ -56,7 +55,7 @@ class Snapshots {
       return [];
     }
 
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       const snapshots = [];
       const rl = readline.createInterface({
         input: fs.createReadStream(file),
