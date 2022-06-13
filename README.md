@@ -25,6 +25,7 @@ This react app provides an example of how to setup testing and use basset.
     You should see an input like this:
 
     ![alt text](images/tests-passed.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbasset%2Fexample-react-app.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbasset%2Fexample-react-app?ref=badge_shield)
 
 6) Assuming your tests pass - check the build within Basset. There should be 8 snapshots.
 
@@ -33,3 +34,7 @@ This react app provides an example of how to setup testing and use basset.
 8) Repeat step 5 (assuming `npm start` is still running). You should see the same output.
 
 9) Check the new build within Basset. There should now be 7 modified snapshots and 1 unmodified (the link text snapshot)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbasset%2Fexample-react-app.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbasset%2Fexample-react-app?ref=badge_large)
